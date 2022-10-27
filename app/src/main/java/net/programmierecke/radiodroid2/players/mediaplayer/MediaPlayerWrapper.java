@@ -89,7 +89,7 @@ public class MediaPlayerWrapper implements PlayerWrapper, StreamProxyListener {
         mediaPlayer.reset();
 
         try {
-            mediaPlayer.setAudioStreamType(isAlarm ? AudioManager.STREAM_ALARM : AudioManager.STREAM_MUSIC);
+            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
             mediaPlayer.setDataSource(proxyUrl);
             mediaPlayer.prepareAsync();
 

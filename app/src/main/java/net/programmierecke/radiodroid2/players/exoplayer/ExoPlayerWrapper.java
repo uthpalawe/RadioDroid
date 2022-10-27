@@ -171,7 +171,7 @@ public class ExoPlayerWrapper implements PlayerWrapper, IcyDataSource.IcyDataSou
         if (player == null) {
             player = new SimpleExoPlayer.Builder(context).build();
             player.setAudioAttributes(new AudioAttributes.Builder().setContentType(C.CONTENT_TYPE_MUSIC)
-                    .setUsage(isAlarm ? C.USAGE_ALARM : C.USAGE_MEDIA).build());
+                    .setUsage(C.USAGE_MEDIA).build());
 
             player.addListener(new ExoPlayerListener());
             player.addAnalyticsListener(new AnalyticEventListener());
